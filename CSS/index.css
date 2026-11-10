@@ -1,0 +1,107 @@
+header{
+background-color: #bd6a3a;
+border-bottom: 1px solid rgb(203, 161, 24);
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 232, 163);
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px ;
+}
+
+nav a{
+    text-decoration: none;
+    color: #e4c87a;
+    font-weight: bold;
+}
+
+nav a:hover{
+    
+    color: #fa8c59;
+    font-weight: bold;
+}
+
+.hero{
+
+    background-color: aliceblue;
+    color: #fa8c59;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1{
+
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #fa8c59;
+    max-height: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: #8730d8;
+    color: rgb(145, 40, 220);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+footer p{
+    color: #f6f3f9;
+    font-size: 14px;
+}
+
+.tarjetas{
+    padding: 50px 0;
+    background-color: #9e4115;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: rgb(244, 177, 78);
+}
+
+
+.contenedor-tarjetas{
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+
+.tarjeta{
+
+    background-color: rgb(52, 36, 10);
+    border: 1px solid aquamarine;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+
+}

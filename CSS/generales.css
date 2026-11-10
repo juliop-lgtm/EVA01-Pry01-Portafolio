@@ -1,0 +1,588 @@
+/* Restablecimiento básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f7f8fc;
+  /* Espacio superior para compensar la barra fija */
+  padding-top: 90px;
+}
+
+/* Cabecera Fija y Estática */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1000;
+}
+
+/* 1. Estilo del Logo */
+.logo-box {
+  background-color: #dddddd;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+/* 2. Menú de Navegación */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #4f46e5;
+}
+
+.nav-item .arrow {
+  font-size: 12px;
+  color: #333333;
+}
+
+/* 3. Acciones Derecha */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botón de Modo Claro/Oscuro */
+.theme-btn {
+  background-color: #e2e0f0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333333;
+  transition: background-color 0.2s ease;
+}
+
+.theme-btn:hover {
+  background-color: #d4d0e8;
+}
+
+/* Botón Usuarios */
+.user-btn {
+  background: linear-gradient(135deg, #4338ca 0%, #7c3aed 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.user-btn:hover {
+  opacity: 0.9;
+}
+
+.user-icon {
+  font-size: 18px;
+}
+
+
+
+
+
+
+/* Configuración general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f7f8fc;
+}
+
+/* Sección principal con fondo radial sutil */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: radial-gradient(circle at center, rgba(168, 139, 250, 0.15) 0%, rgba(247, 248, 252, 0) 70%);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+}
+
+/* 1. Badge / Texto de entrada */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 32px;
+}
+
+.badge-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #93c5fd;
+  border-radius: 50%;
+}
+
+/* 2. Título principal */
+.hero-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.hero-title .highlight {
+  color: #6366f1;
+}
+
+/* 3. Párrafo descriptivo */
+.hero-description {
+  font-size: 18px;
+  color: #374151;
+  line-height: 1.6;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+/* 4. Contenedor de botones con Flexbox */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Estilos de botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Botón izquierdo (Negro) */
+.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  gap: 10px;
+}
+
+.btn-primary .arrow {
+  font-size: 18px;
+}
+
+/* Botón derecho (Degradado azul/púrpura) */
+.btn-secondary {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+
+
+
+.community-section {
+  background-color: #eef1f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Cabecera */
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f3e8ff;
+  color: #7c3aed;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  color: #111827;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Contenedor de Tarjetas con Flexbox */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo individual de cada tarjeta */
+.card {
+  background-color: #ffffff;
+  padding: 40px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  flex: 1;
+  min-width: 220px;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tipografía de las tarjetas */
+.card-number {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.card-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Colores específicos para los números */
+.card-number.blue { color: #2563eb; }
+.card-number.purple { color: #7c3aed; }
+.card-number.green { color: #16a34a; }
+.card-number.red { color: #dc2626; }
+
+/* Configuración base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #eef2f7;
+  color: #333333;
+}
+
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* 1. Cabecera principal */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.title-group h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-group .icon {
+  color: #3b82f6;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.propose-btn {
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.propose-btn:hover {
+  opacity: 0.8;
+}
+
+.plus-icon {
+  font-size: 20px;
+}
+
+/* 2. Contenedor de Tarjetas */
+.cards-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch; /* Mantiene la misma altura en todas las tarjetas */
+  flex-wrap: wrap;
+}
+
+/* 3. Estructura Flexbox de las Tarjetas */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empuja el bloque inferior alineadamente */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Badges de estado superiores */
+.badge {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.badge-green {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.badge-blue {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.badge-pink {
+  background-color: #fce7f3;
+  color: #ec4899;
+}
+
+.phase-info {
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Título y descripción */
+.card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Bloque inferior agrupado para justificación uniforme */
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sección de Roles */
+.roles-section {
+  margin-bottom: 20px;
+}
+
+.roles-title {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: #6b7280;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.tags-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Barra de progreso */
+.progress-bar-bg {
+  background-color: #e5e7eb;
+  height: 8px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.green-bar { background-color: #22c55e; }
+.blue-bar { background-color: #2563eb; }
+.pink-bar { background-color: #f43f5e; }
+
+/* Pie de tarjeta (Avatares y Botón) */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatars-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -8px;
+  border: 2px solid #ffffff;
+}
+
+.avatar-blue { background-color: #1d4ed8; }
+.avatar-purple { background-color: #7c3aed; }
+.avatar-red { background-color: #ef4444; }
+.avatar-orange { background-color: #f97316; }
+.avatar-light-blue { background-color: #60a5fa; }
+.avatar-teal { background-color: #14b8a6; }
+.avatar-coral { background-color: #f43f5e; }
+
+/* Botón Unirme */
+.join-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.join-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
